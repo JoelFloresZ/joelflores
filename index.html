@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoelFzop | Portafolio web</title>
+    <link rel="stylesheet" href="./dist/css/tailwind.css">
+    <link rel="stylesheet" href="./dist/css/styles.css">
+</head>
+<body class="">
+    <div id="app">
+        <!-- Home -->
+        <div class="" id="home">
+            <!-- Header -->
+           <div class="w-full" id="nav-bar-banner">
+            <header class="h-72 flex shadow-md sticky justify-between p-5 sm:p-5 md:px-16 md:py-3 text-gray-50 bg-gray-900 bg-opacity-20">
+                <!-- logo -->
+                <div>
+                    <h3 class="font-semibold sm:text-lg md:text-2xl">{{titlePage}}</h3>
+                </div>
+
+                <div>
+                    <ul class="hidden sm:hidden md:flex">
+                        <li 
+                        class="mr-4" 
+                        v-for="(link, index) in navigation" :key="index">
+                            <a class="text-sm font-semibold" :href="link.url">{{link.link}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+           </div>
+           <!-- banner -->
+            <div id="banner" class="w-10/12 mx-auto h-full md:flex justify-center items-center">
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 mt-10">
+                    <!-- intro -->
+                    <div>
+                        <div class="text-center sm:text-center">
+                            <span class="text-7xl font-semibold capitalize px-3">hola</span>
+                            <h2 
+                            class="text-3xl sm:text-6xl md:text-6xl mt-2 text-center font-semibold capitalize px-3 py-2">
+                                mí nombre es joel flores zopiyactle
+                            </h2>
+                            <p class="mt-2 text-center font-semibold capitalize text-sm text-gray-600">desarrollador fullstack</p>
+
+                            
+
+
+                            <div class="mt-5 pb-20 sm:mb-3 md:mb-0 text-justify p-6">
+                                <!-- Circle separator -->
+                                <div class="flex py-5">
+                                    <div class="w-5 h-5 mr-1 border-2 border-gray-800 rounded-full"></div>
+                                    <div class="w-5 h-5 bg-gray-800 rounded-full"></div>
+                                </div>
+
+                                <!-- About -->
+                                <div class="">
+                                    <h3 class="text-base font-semibold mb-3">Sobre mí</h3>
+                                    <p class="text-gray-800 text-sm font-thin">
+                                        Hola mi nombre es <b class="capitalize">joel flores</b>,  una de mis habilidades que mejor yo creo tener es la facilidad de aprender nuevas cosas, soy bueno colaborando en equipo y
+                                         ademas algo mas que me gusta es conocer lugares.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- img -->
+                    <div class="justify-center">
+                        <!-- Img -->
+                        <div class="w-full flex justify-center">
+                            <img src="./dist/img/4401280.jpg" class="hidden sm:hidden md:block w-8/12 md:mt-0" alt="Img Desarollo web ">
+                        </div>
+                        <!-- Contact -->
+                        <div class="w-full">
+                            <ul class="flex justify-center">
+                                <li class="mr-3"><a href="#"><img src="./dist/svg/whatsapp.svg" class="w-5" alt=""></a></li>
+                                <li class="mr-3"><a href="#"><img src="./dist/svg/facebook.svg" class="w-5" alt=""></a></li>
+                                <li class="mr-3"><a href="#"><img src="./dist/svg/email.svg"    class="w-5" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+        
+        <!-- Education -->
+        <div class="h-auto py-16 bg-gray-900 flex items-center text-white" id="education">
+            <div class="w-9/12 mx-auto">
+                <div id="sub-title">
+                    <h2 class="text-5xl font-semibold pt-10">Educación</h2>
+                    <!-- About education -->
+                    <div class="w-10/12">
+                        <p class="text-sm md:text-lg font-releway text-current mt-5">
+                            Como parte de mi educación y profesión tengo la carrera en ingeniería en sistemas computacionales, además de tomar algunos cursos para mejorar mis habilidades en el mundo del desarrollo web entre ellos cursos de lenguajes de programación y diseño web. 
+                        </p>
+                    </div>
+
+                    <div class="container mt-10">
+                        <div class="grid grid-cols-1">
+                            <!-- carrera -->
+                            <div class="grid grid-cols-12">
+                                <!-- Desing fill -->
+                                <div class="col-span-1">
+                                    
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="iconify text-white text-xl" data-icon="mdi:checkbox-blank-circle-outline" data-inline="false"></span>
+                                        <span class="h-24 bg-white w-1"></span>
+                                    </div>
+
+                                </div>
+                                <!-- Info -->
+                                <div class="col-span-8">
+                                    <h4 class="text-base font-semibold">Estudio máximo</h4>
+                                    <p class="text-sm font-thin mt-2">
+                                        Carrera en ingeniería en sistemas computacionales, estudiando en la universidad del <span class="capitalize">instituto  tecnológico superior de zongolica</span>. 
+                                    </p>
+                                    <section class="mt-1">
+                                        <p class="w-40 text-xs border-2 border-gray-300 rounded-full px-3 py-1">Año <b>2015</b> - <b>2020</b></p>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- Cursos -->
+                            <div class="grid grid-cols-12">
+                                <!-- Desing fill -->
+                                <div class="col-span-1">
+                                    
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="iconify text-white text-xl" data-icon="mdi:checkbox-blank-circle-outline" data-inline="false"></span>
+                                        <span class="h-16 bg-white w-1"></span>
+                                    </div>
+
+                                </div>
+                                <!-- Info -->
+                                <div class="col-span-8">
+                                    <h4 class="text-base font-semibold">Cursos</h4>
+                                    <p class="text-sm font-thin">
+                                        Algunos de los cursos que he tomado para mejorar mis habilidades son las siguientes.
+
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Diplamado -->
+                            <div class="grid grid-cols-12">
+                                <!-- Desing fill -->
+                                <div class="col-span-1">
+                                    
+                                    <div class="flex flex-col items-center justify-center">
+                                        <span class="iconify text-white text-xl" data-icon="mdi:checkbox-blank-circle-outline" data-inline="false"></span>
+                                        <span class="h-24 bg-white w-1"></span>
+                                    </div>
+
+                                </div>
+                                <!-- Info -->
+                                <div class="col-span-8">
+                                    <h4 class="text-base font-semibold">Diplomado</h4>
+                                    <p class="text-sm font-thin">
+                                        Diplomado en desarrollo de sitios web y aplicaciones móviles
+                                    </p>
+                                    <section class="mt-1">
+                                        <p class="w-64 text-xs border-2 border-gray-300 rounded-full px-3 py-1">Obtenido el <b>16</b> de Febrero <b>2021</b></b></p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="h-screen bg-gray-50" id="skills">
+            <div class="w-9/12 mx-auto">
+                <div id="sub-title">
+                    <h2 class="text-5xl font-semibold pt-6">Habilidades</h2>
+
+                   <div class="grid grid-cols-2">
+                        <!-- list tecnologia -->
+                        <div>
+                            <ul class="mt-10">
+                                <li class="flex items-center font-semibold cursor-pointer" @click="changeLenguajes(index)" v-for="(skill, index) in skills" :key="index">
+                                    <div class="mr-1" v-html="skill.img"></div>
+                                    <div class="text-xl uppercase leading-8">{{skill.skill}}</div>
+                                   <!--  <span class="iconify text-xs ml-2 text-gray-900 " data-icon="ls:clip" data-inline="false"></span> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- img transition -->
+                        <div class="flex justify-center items-center text-center">
+                            <div class="w-64 h-96 bg-yellow-500" :class="bgColor">
+                                <div class="w-full h-full flex flex-wrap justify-center items-center">
+                                    <h2 class="text-4xl uppercase">{{nameLenguje}}</h2>
+                                    <br/>
+                                    <h4 class="text-4xl font-extrabold w-full">70%</h4>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="mt-10">
+                       <h5 class="text-center text-lg font-semibold text-gray-800">Me gustaria aprender en este año</h5>
+                       <ul class="flex justify-center">
+                           <li class="text-gray-800 text-3xl mr-2"><span class="iconify" data-icon="mdi:language-typescript" data-inline="false"></span></li>
+                           <li class="text-gray-800 text-3xl mr-2"><span class="iconify" data-icon="mdi:language-java" data-inline="false"></span></li>
+                           <li class="text-gray-800 text-3xl mr-2"><span class="iconify" data-icon="mdi:nuxt" data-inline="false"></span></li>
+                       </ul>
+                   </div>
+
+                </div>
+            </div>        
+        </div>
+
+        <!-- jobs -->
+        <div class="md:h-screen bg-indigo-50" id="jobs">
+            <div class="w-9/12 mx-auto">
+                <h2 class="pt-10 text-5xl font-semibold">Trabajos realizados</h2>
+
+                <div>
+                    <p class="mt-10 text-base font-releway">
+                        En esta sección encontrarás algunos proyectos que he desarrollado para mejorar mis habilidades como programador web.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 mt-10 gap-5">
+                    <div>
+                       <!-- card one -->
+                       <div class="flex flex-wrap justify-center items-center">
+                           <a 
+                           href="./jobs/deendi.html"
+                           class="w-60 h-60 rounded-full hover:shadow-2xl">
+                            <div class="w-60 h-60 bg-gray-200 rounded-full" id="img-one">
+                            </div>
+                            </a>
+
+                           <div class="w-full">
+                               <section class="text-center mt-3 text-xs">
+                                   <h5 class="font-semibold">DEENDI</h5>
+                                   <P>Plataforma de encuestas dinamicas</P>
+                               </section>
+
+                               <section class="flex justify-center sm:justify-center flex-wrap text-gray-800 font-semibold">
+                                    <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                        LARAVEL
+                                     </span>
+
+                                     <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                        VUE JS
+                                     </span>
+
+                                     <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                        BOOSTRAP
+                                     </span>
+
+                                     <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                        JQUERY
+                                     </span>
+
+                                     <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                        MYSQL
+                                     </span>
+                               </section>
+                           </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <!-- card two -->
+                        <div class="flex flex-wrap justify-center items-center">
+                            <a 
+                           href="./jobs/alineacion.html"
+                           class="w-60 h-60 rounded-full hover:shadow-2xl">
+                            <div class="w-60 h-60 bg-gray-200 rounded-full" id="img-two">
+                            </div>
+                            </a>
+ 
+                            <div class="w-full">
+                                <section class="text-center mt-3 text-xs">
+                                    <h5 class="font-semibold">Alineación de equipos</h5>
+                                    <P>Alinea tu equipo de juego</P>
+                                </section>
+ 
+                                <section class="flex justify-center sm:justify-center flex-wrap text-gray-800 font-semibold">
+                                     
+                                      <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                         VUE JS
+                                      </span>
+ 
+                                      <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                         Tailwindcss
+                                      </span>
+ 
+                                      <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                         HTML 5
+                                      </span>
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                         <!-- card three -->
+                       <div class="flex flex-wrap justify-center items-center">
+                        <a href="./jobs/airbnbn-clone.html"
+                        class="w-60 h-60 rounded-full hover:shadow-2xl">
+                            <div class="w-60 h-60 bg-gray-200 rounded-full" id="img-three">
+                            </div>
+                        </a>
+
+                        <div class="w-full">
+                            <section class="text-center mt-3 text-xs">
+                                <h5 class="font-semibold">AIRDB</h5>
+                                <P>Alquila un cuarto pra ti viaje</P>
+                            </section>
+
+                            <section class="flex justify-center sm:justify-center flex-wrap text-gray-800 font-semibold">
+                                 
+                                  <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                     VUE JS
+                                  </span>
+
+                                  <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                     Tailwindcss
+                                  </span>
+
+                                  <span class="border border-indigo-500 px-2 py-1 rounded-full text-xs m-2">
+                                     HTML 5
+                                  </span>
+
+                            </section>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <footer>
+        <div class="bg-gray-900">
+            <div class="py-10 text-center text-gray-400">
+                <section>
+                    <p class="text-base font-thin">Derechos reservados &copy; 2021</p>
+                </section>
+            </div>
+        </div>
+       </footer>
+
+    </div>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="./dist/js/vue.js"></script>
+    <script src="./dist/js/app.js"></script>
+</body>
+</html>

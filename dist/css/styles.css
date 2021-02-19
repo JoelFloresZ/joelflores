@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: "Taviraj";
+    src: url('https://fonts.googleapis.com/css2?family=Taviraj:wght@700&display=swap');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Releway";
+    src: url('./../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
+/* #home {
+    background-image: url('./../img/gb-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+} */
+
+
+#nav-bar-banner {
+    background-image: url('./../img/xps-dpbXgTh0Lac-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#title-home {
+    font-family: 'Taviraj', serif;
+}
+
+/* Imagenes para las cartas de los trabajos realizados */
+
+#img-one {
+    background-image: url('./../img/deendi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img-one:hover, #img-two:hover, #img-three:hover {
+    background-size: 180%;
+    transition: 3s, ease-out;
+}
+
+#img-two {
+    background-image: url('./../img/manager.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img-three {
+    background-image: url('./../img/airdb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.font-releway {
+    font-family: 'Releway';
+}
