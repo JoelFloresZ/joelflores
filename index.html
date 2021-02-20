@@ -13,8 +13,8 @@
         <!-- Home -->
         <div class="" id="home">
             <!-- Header -->
-           <div class="w-full" id="nav-bar-banner">
-            <header class="h-72 flex shadow-md sticky justify-between p-5 sm:p-5 md:px-16 md:py-3 text-gray-50 bg-gray-900 bg-opacity-20">
+           <div class="w-full relative" id="nav-bar-banner">
+            <header class="h-96 flex shadow-md sticky justify-between p-5 sm:p-5 md:px-16 md:py-3 text-gray-50 bg-gray-900 bg-opacity-30">
                 <!-- logo -->
                 <div>
                     <h3 class="font-semibold sm:text-lg md:text-2xl">{{titlePage}}</h3>
@@ -22,14 +22,43 @@
 
                 <div>
                     <ul class="hidden sm:hidden md:flex">
-                        <li 
-                        class="mr-4" 
-                        v-for="(link, index) in navigation" :key="index">
-                            <a class="text-sm font-semibold" :href="link.url">{{link.link}}</a>
-                        </li>
+                        
+                        <div class="cursor-pointer" id="btn-menu-open">
+                            <div class="w-6 h-1 my-1 bg-gray-100"></div>
+                            <div class="w-6 h-1 my-1 bg-gray-100"></div>
+                            <div class="w-6 h-1 my-1 bg-gray-100"></div>
+                        </div>
                     </ul>
                 </div>
             </header>
+            <!-- navbar toggle -->
+            <div class="w-1/2 bg-black absolute h-screen top-0 bg-opacity-80 shadow-md" id="sidebar">
+                <div class="w-11/12 mx-auto mt-10">
+                    <div class="flex justify-between" id="header">
+                       <div>
+                            <h2 class="text-gray-200 text-2xl font-semibold">Menu</h2>
+                       </div>
+
+                       <div>
+                           <h2 class="text-white uppercase text-base font-semibold cursor-pointer" id="btn-close-navbar">x</h2>
+                       </div>
+                    </div>
+                    <!-- separaitor -->
+                    <hr class="bg-gray-700 mt-2 text-gray-700">
+
+                    <div id="nav">
+                        <nav class="mt-10 text-base font-semibold text-gray-300 leading-9">
+                            <ul>
+                                <li 
+                                class="my-2 px-3 rounded-sm shadow hover:bg-gray-300 hover:bg-opacity-10" 
+                                v-for="(link, index) in navigation" :key="index">
+                                    <a class="text-sm font-semibold" :href="link.url">{{link.link}}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
            </div>
            <!-- banner -->
             <div id="banner" class="w-10/12 mx-auto h-full md:flex justify-center items-center">
@@ -73,7 +102,7 @@
                         </div>
                         <!-- Contact -->
                         <div class="w-full">
-                            <ul class="flex justify-center">
+                            <ul class="flex justify-center mb-5 sm:mb-5 md:mb-0">
                                 <li class="mr-3"><a href="#"><img src="./dist/svg/whatsapp.svg" class="w-5" alt=""></a></li>
                                 <li class="mr-3"><a href="#"><img src="./dist/svg/facebook.svg" class="w-5" alt=""></a></li>
                                 <li class="mr-3"><a href="#"><img src="./dist/svg/email.svg"    class="w-5" alt=""></a></li>
@@ -87,11 +116,11 @@
         
         <!-- Education -->
         <div class="h-auto py-16 bg-gray-900 flex items-center text-white" id="education">
-            <div class="w-9/12 mx-auto">
+            <div class="w-5/6 md:w-9/12 mx-auto">
                 <div id="sub-title">
-                    <h2 class="text-5xl font-semibold pt-10">Educación</h2>
+                    <h2 class="text-5xl font-semibold pt-5">Educación</h2>
                     <!-- About education -->
-                    <div class="w-10/12">
+                    <div class="w-11/12 md:w-10/12">
                         <p class="text-sm md:text-lg font-releway text-current mt-5">
                             Como parte de mi educación y profesión tengo la carrera en ingeniería en sistemas computacionales, además de tomar algunos cursos para mejorar mis habilidades en el mundo del desarrollo web entre ellos cursos de lenguajes de programación y diseño web. 
                         </p>
@@ -111,12 +140,12 @@
 
                                 </div>
                                 <!-- Info -->
-                                <div class="col-span-8">
+                                <div class="col-span-10 md:col-span-8">
                                     <h4 class="text-base font-semibold">Estudio máximo</h4>
                                     <p class="text-sm font-thin mt-2">
                                         Carrera en ingeniería en sistemas computacionales, estudiando en la universidad del <span class="capitalize">instituto  tecnológico superior de zongolica</span>. 
                                     </p>
-                                    <section class="mt-1">
+                                    <section class="my-5">
                                         <p class="w-40 text-xs border-2 border-gray-300 rounded-full px-3 py-1">Año <b>2015</b> - <b>2020</b></p>
                                     </section>
                                 </div>
@@ -133,12 +162,16 @@
 
                                 </div>
                                 <!-- Info -->
-                                <div class="col-span-8">
+                                <div class="col-span-10 md:col-span-8">
                                     <h4 class="text-base font-semibold">Cursos</h4>
                                     <p class="text-sm font-thin">
                                         Algunos de los cursos que he tomado para mejorar mis habilidades son las siguientes.
 
                                     </p>
+
+                                    <section class="my-5">
+                                        <p class="w-40 text-xs border-2 border-gray-300 rounded-full px-3 py-1">Año <b>2015</b> - <b>2020</b></p>
+                                    </section>
                                 </div>
                             </div>
                             
@@ -154,7 +187,7 @@
 
                                 </div>
                                 <!-- Info -->
-                                <div class="col-span-8">
+                                <div class="col-span-10 md:col-span-8">
                                     <h4 class="text-base font-semibold">Diplomado</h4>
                                     <p class="text-sm font-thin">
                                         Diplomado en desarrollo de sitios web y aplicaciones móviles
@@ -171,35 +204,38 @@
         </div>
 
         <!-- Skills -->
-        <div class="h-screen bg-gray-50" id="skills">
-            <div class="w-9/12 mx-auto">
+        <div class="h-auto md:h-screen bg-gray-50" id="skills">
+            <div class="w-5/6 md:w-9/12 mx-auto">
                 <div id="sub-title">
-                    <h2 class="text-5xl font-semibold pt-6">Habilidades</h2>
+                    <h2 class="text-5xl font-semibold pt-16">Habilidades</h2>
 
-                   <div class="grid grid-cols-2">
+                   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
                         <!-- list tecnologia -->
                         <div>
-                            <ul class="mt-10">
-                                <li class="flex items-center font-semibold cursor-pointer" @click="changeLenguajes(index)" v-for="(skill, index) in skills" :key="index">
+                            <ul class="mt-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 leading-8">
+                                <li class="flex items-center font-semibold md:cursor-pointer" @click="changeLenguajes(index, skill.nivel)" v-for="(skill, index) in skills" :key="index">
+                                   <div>
                                     <div class="mr-1" v-html="skill.img"></div>
                                     <div class="text-xl uppercase leading-8">{{skill.skill}}</div>
+                                    <div class="text-xl uppercase leading-8">{{skill.nivel}}</div>
+                                   </div>
                                    <!--  <span class="iconify text-xs ml-2 text-gray-900 " data-icon="ls:clip" data-inline="false"></span> -->
                                 </li>
                             </ul>
                         </div>
                         <!-- img transition -->
-                        <div class="flex justify-center items-center text-center">
+                        <div class="hidden sm:hidden  md:flex justify-center items-center text-center">
                             <div class="w-64 h-96 bg-yellow-500" :class="bgColor">
                                 <div class="w-full h-full flex flex-wrap justify-center items-center">
                                     <h2 class="text-4xl uppercase">{{nameLenguje}}</h2>
                                     <br/>
-                                    <h4 class="text-4xl font-extrabold w-full">70%</h4>
+                                    <h4 class="text-4xl font-extrabold w-full">{{nivelSkill}}</h4>
                                 </div>
                             </div>
                         </div>
                    </div>
 
-                   <div class="mt-10">
+                   <div class="my-10">
                        <h5 class="text-center text-lg font-semibold text-gray-800">Me gustaria aprender en este año</h5>
                        <ul class="flex justify-center">
                            <li class="text-gray-800 text-3xl mr-2"><span class="iconify" data-icon="mdi:language-typescript" data-inline="false"></span></li>
@@ -213,9 +249,9 @@
         </div>
 
         <!-- jobs -->
-        <div class="md:h-screen bg-indigo-50" id="jobs">
-            <div class="w-9/12 mx-auto">
-                <h2 class="pt-10 text-5xl font-semibold">Trabajos realizados</h2>
+        <div class="h-auto md:h-screen bg-gray-50 pb-10 text-gray-900" id="jobs">
+            <div class="w-5/6 md:w-9/12 mx-auto">
+                <h2 class="text-5xl font-semibold pt-16">Trabajos realizados</h2>
 
                 <div>
                     <p class="mt-10 text-base font-releway">
@@ -351,5 +387,6 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="./dist/js/vue.js"></script>
     <script src="./dist/js/app.js"></script>
+    <script src="./dist/js/navbarToggle.js"></script>
 </body>
 </html>

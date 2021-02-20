@@ -49,8 +49,10 @@ html {
 }
 
 #img-one:hover, #img-two:hover, #img-three:hover {
-    background-size: 180%;
-    transition: 3s, ease-out;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    /* background-size: 180%; */
+   
 }
 
 #img-two {
@@ -70,4 +72,9 @@ html {
 
 .font-releway {
     font-family: 'Releway';
+}
+
+/* btn close navbar */
+#sidebar:focus {
+    transition: 3s linear ease;
 }
