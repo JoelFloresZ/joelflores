@@ -1,84 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Deendi</title>
-    <link rel="stylesheet" href="./../dist/css/tailwind.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Deendi</title>
+  <!-- or the reference on CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="./../dist/css/tailwind.css" />
+
+
 </head>
+
 <body>
+  <header class="bg-white flex shadow-md sticky justify-between p-5 sm:p-5 md:px-16 md:py-3 text-gray-900">
+    <div>
+      <a href="/">JoelFlores</a>
+    </div>
+  </header>
 
-    <header class="bg-white flex shadow-md sticky justify-between p-5 sm:p-5 md:px-16 md:py-3 text-gray-900">
+
+
+  <main class="w-3/5 mx-auto">
+    <div>
+      <section class="mt-10">
+        <h1 class="text-xl text-gray-900 font-semibold uppercase">deendi</h1>
+        <p class="text-base text-gray-600">
+          Plataforma web de encuestas dinámicas
+        </p>
+      </section>
+
+      <section class="mt-10">
+        <h2 class="text-lg font-semibold">Descripción:</h2>
+        <!-- description -->
         <div>
-          <a href="/">JoelFlores</a>
+          <p class="mt-5 text-base leading-7 text-gray-700">
+            Deendi es una plataforma web de encuestas dinámicas que fue
+            desarrollada en la universidad del Instituto Tecnológico Superior
+            de Zongolica, para los alumnos de la carrera en ingeniería en
+            desarrollo comunitario, esta aplicación permite la creación de
+            encuestas con un total de 8 tipos de formularios (tipo de
+            pregunta) que se puede agregar en la encuesta, una vez tenido la
+            encuesta terminada el usuario puede aplicar tantas veces sea
+            necesario para la recopilación de datos, además la plataforma
+            permite enviar encuesta por via correo electronico para que este
+            sea respondido.
+          </p>
+
+          <p class="mt-2 text-base leading-7 text-gray-700">
+            Al final de la obtención de datos, la plataforma cuenta con la
+            opción de mostrar los resultados obtenidos de la encuesta
+            aplicada, en donde se muestra resultados estadísticos por cada
+            pregunta que contenga la encuesta.
+          </p>
         </div>
-    </header>
 
-    <main class="w-3/5 mx-auto">
         <div>
-            <section class="mt-10">
-                <h2 class="uppercase text-xl text-gray-800 font-semibold">deendi</h2>
-                <p class="text-gray-600 text-base font-medium">Plataforma web de encuestas dinamicas</p>
-            </section>
+          <h2 class="mt-5 mb-3 text-lg font-semibold text-gray-900">
+            Funciones principales de la plataforma:
+          </h2>
 
-            <section class="mt-10">
-                <h5 class="text-base text-gray-700 font-semibold">Descripción:</h5>
-                <!-- description -->
-                <div class="text-gray-700 text-base mt-2">
-                    <p>
-                        Deendi es una plafaorma web de encuestas dinamicas que fue 
-                        desarrollado en la universidad del instituto tecnologico superior
-                        de zongolica, esta aplicación permite la creacion de encuesta y 
-                        posterior estos son aplicados para la recabación de datos.
-                    </p>
-    
-                    <p class="mt-2">
-                        Ademas la misma plataforma cuenta con un analises estadistica que puede generar
-                        para cada pregunta respondido.
-                    </p>
-                </div>
+          <ul class="text-base text-gray-700 leading-8 list-disc ml-5">
+            <li>Control de usuario</li>
+            <li>Crear encuesta</li>
+            <li>Agregar, editar y eliminar formularios</li>
+            <li>Compartir encuestas</li>
+            <li>Responder encuesta</li>
+            <li>Buscar encuesta</li>
+            <li>Analizar resultados</li>
+            <li>Registrar contacto</li>
+            <li>Crear grupos de trabajo</li>
+          </ul>
 
-                <!-- carosel -->
-                <p class="mt-5 text-base text-gray-700">
-                    En la siguiente carosel encontrara algunas capturas de la 
-                    aplicación como fue desarrollado.
-                </p>
-                <div class="mt-3 bg-gray-200 h-96">
+          <p class="mt-10 text-base text-gray-700 leading-7">
+            La opción de crear grupos de contacto permite al usuario de la
+            plataforma enviar una encuesta a múltiples usuarios que tiene
+            registrado en su agenda de contactos.
+          </p>
 
-                </div>
+          <p class="mt-3 text-base text-gray-800">
+            En la siguiente slider se muestran algunas capturas de la
+            plataforma.
+          </p>
+        </div>
 
-               
-            </section>
-             <!-- tecnologias itulizados -->
-             <div class="mt-5 text-sm font-semibold text-gray-700 leading-8">
-                <p class="leading-6">
-                    Para la realizacion de este proyecto las herramientas, metodos y tecnologias que se utilizaron son las 
-                    siguientes.
-                </p>
+        <!-- carosel -->
+        <div class="mt-3 mb-32 bg-gray-200 relative">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./deendi/1.png" class="h-auto" alt="" srcset="" />
+                </li>
 
-                <ul class="mt-2 list-disc">
-                    <li>UML (Lenguaje de modelado)</li>
-                    <li>Metodologia OOHDM</li>
-                    <li>HTML 5</li>
-                    <li>CSS 3</li>
-                    <li>Javascript (ES6)</li>
-                    <li>php 7+</li>
-                    <li>Laravel</li>
-                    <li>Vue js</li>
-                    <li>Vuex</li>
-                    <li>Bootstrap 4</li>
-                    <li>JQuery</li>
-                    <li>Base de datos (MYSQL)</li>
-                    <li>VS code</li>
-                </ul>
+                <li class="splide__slide">
+                  <img src="./deendi/2.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/3.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/4.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/5.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/6.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/7.png" class="h-auto" alt="" srcset="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./deendi/8.png" class="h-auto" alt="" srcset="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./deendi/9.png" class="h-auto" alt="" srcset="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./deendi/10.png" class="h-auto" alt="" srcset="" />
+                </li>
+
+                <li class="splide__slide">
+                  <img src="./deendi/11.png" class="h-auto" alt="" srcset="" />
+                </li>
+              </ul>
             </div>
 
-            <div class="py-10 flex justify-center">
-                <a href="./alineacion.html" class="bg-indigo-600 text-white font-semibold text-base px-4 py-2 shadow-md hover:bg-indigo-800 focus:outline-none">Siguiente</a>
+            <div class="splide__progress">
+              <div class="splide__progress__bar"></div>
             </div>
+          </div>
         </div>
-    </main>
-    
+      </section>
+      <!-- tecnologias itulizados -->
+      <div class="text-base font-semibold">
+        <h3 class="text-lg leading-6 text-gray-800">
+          Para el desarrollo del proyecto las herramientas, métodos y
+          tecnologías que se utilizaron son las siguientes.
+        </h3>
+
+        <ul class="text-base mt-3 list-disc leading-8 ml-5 text-gray-700">
+          <li>UML (Lenguaje de modelado)</li>
+          <li>Metodologia OOHDM</li>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>Javascript (ES6)</li>
+          <li>php 7+</li>
+          <li>Laravel</li>
+          <li>Vue js</li>
+          <li>Vuex</li>
+          <li>Bootstrap 4</li>
+          <li>JQuery</li>
+          <li>Base de datos (MYSQL)</li>
+          <li>VS code</li>
+        </ul>
+      </div>
+
+      <div class="py-10 flex justify-center">
+        <a href="./alineacion.html"
+          class="bg-indigo-600 text-white font-semibold text-base px-4 py-2 shadow-md hover:bg-indigo-800 focus:outline-none">Siguiente</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <script>
+    let splide = new Splide(".splide");
+
+    splide.on("autoplay:playing", function (rate) {
+      console.log(rate); // 0-1
+    });
+
+    splide.mount();
+  </script>
 </body>
+
 </html>
