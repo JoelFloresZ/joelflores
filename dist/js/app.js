@@ -93,5 +93,11 @@ const App = new Vue({
       this.bgColor = this.skills[index].bgColor;
       this.nivelSkill = nivel;
     },
+
+    closeNav() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.transition = '0.5s ease';
+      sidebar.style.transform = "translateX(-100%)";
+    },
   },
 });

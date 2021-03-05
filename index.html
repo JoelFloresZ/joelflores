@@ -33,7 +33,7 @@
                 </div>
             </header>
             <!-- navbar toggle -->
-            <div class="w-1/2 bg-black absolute h-screen top-0 bg-opacity-80 shadow-md" id="sidebar">
+            <div class="w-full bg-black absolute h-screen top-0 bg-opacity-80 shadow-md" id="sidebar">
                 <div class="w-11/12 mx-auto mt-10">
                     <div class="flex justify-between" id="header">
                        <div>
@@ -49,11 +49,11 @@
 
                     <div id="nav">
                         <nav class="mt-10 text-base font-semibold text-gray-300 leading-9">
-                            <ul>
+                            <ul id="btn-close">
                                 <li 
                                 class="my-2 px-3 rounded-sm shadow hover:bg-gray-300 hover:bg-opacity-10" 
                                 v-for="(link, index) in navigation" :key="index">
-                                    <a class="text-sm font-semibold" :href="link.url">{{link.link}}</a>
+                                    <a class="text-sm font-semibold" :href="link.url" @click="closeNav()">{{link.link}}</a>
                                 </li>
                             </ul>
                         </nav>
