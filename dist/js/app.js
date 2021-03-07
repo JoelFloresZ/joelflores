@@ -2,7 +2,7 @@ const App = new Vue({
   el: "#app",
   data() {
     return {
-      titlePage: "JoelFzop" ,
+      titlePage: "JoelFlores" ,
       navigation: [
         { link: "Inicio", url: "/" },
         { link: "Educación", url: "#education" },
